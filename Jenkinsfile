@@ -10,7 +10,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Shubi2001/jenkins-docker_demo.git'
+                git branch: 'main',
+                    url: 'https://github.com/Shubi2001/jenkins-docker_demo.git'
             }
         }
 
